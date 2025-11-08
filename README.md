@@ -157,7 +157,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - UI components built with [shadcn/ui](https://ui.shadcn.com/)
 - Icons from [Lucide](https://lucide.dev/)
-- Initially scaffolded with Loveable (now fully independent)
 
 ## 📧 Contact
 
