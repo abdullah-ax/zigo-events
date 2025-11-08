@@ -1,7 +1,6 @@
 # 🎉 Zigo Events - Event Management App
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Deploy to GitHub Pages](https://github.com/abdullah-ax/zigo-events/actions/workflows/deploy.yml/badge.svg)](https://github.com/abdullah-ax/zigo-events/actions/workflows/deploy.yml)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.5-blue.svg)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-18.3-blue.svg)](https://reactjs.org/)
 
