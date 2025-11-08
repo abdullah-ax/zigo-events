@@ -148,15 +148,6 @@ Building Zigo Events helped me develop skills in:
 - **CI/CD**: Setting up automated deployments with GitHub Actions
 - **Self-Hosting**: Making the app fully self-hostable without external dependencies
 
-## 🌟 My Contributions
-
-- Removed all Loveable/GPTEngineer dependencies to make the app fully self-contained
-- Implemented comprehensive TypeScript types for better code quality
-- Added proper error handling and validation
-- Configured GitHub Pages deployment workflow
-- Created thorough documentation for contributors
-- Organized code structure for better maintainability
-- Added ESLint and Prettier for code consistency
 
 ## 📄 License
 
