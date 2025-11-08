@@ -82,7 +82,7 @@ const SelectServices = () => {
   
   // Handle skipping a category
   const handleSkipCategory = () => {
-    markCategoryCompleted(eventId, activeTab as any);
+    markCategoryCompleted(eventId, activeTab as keyof CompletedCategories);
     
     // Move to next category
     const currentIndex = categories.findIndex(c => c.id === activeTab);
@@ -104,7 +104,7 @@ const SelectServices = () => {
       if (vendor) {
         addVendorToEvent(eventId, {
           name: vendor.name,
-          category: vendor.category as any,
+          category: vendor.category as keyof CompletedCategories,
           price: vendor.price.base,
           paymentStatus: 'pending'
         });
@@ -112,7 +112,7 @@ const SelectServices = () => {
     }
     
     // Mark category as completed
-    markCategoryCompleted(eventId, activeTab as any);
+    markCategoryCompleted(eventId, activeTab as keyof CompletedCategories);
     
     // Move to next category
     const currentIndex = categories.findIndex(c => c.id === activeTab);
