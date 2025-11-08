@@ -11,6 +11,7 @@ import ManageInvitesDialog from '@/components/ManageInvitesDialog';
 import ManagePaymentsDialog from '@/components/ManagePaymentsDialog';
 import { formatCurrency } from '@/lib/utils';
 import { toast } from '@/components/ui/use-toast';
+import { Event, Vendor } from '@/types';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -64,14 +65,14 @@ const Home = () => {
   };
 
   // Calculate event statistics
-  const calculateCompletedCategories = (event: any) => {
+  const calculateCompletedCategories = (event: Event) => {
     if (!event.completedCategories) return 0;
     return Object.values(event.completedCategories).filter(Boolean).length;
   };
 
-  const calculateTotalBudget = (event: any) => {
+  const calculateTotalBudget = (event: Event) => {
     if (!event.vendors || event.vendors.length === 0) return 0;
-    return event.vendors.reduce((sum: number, vendor: any) => sum + vendor.price, 0);
+    return event.vendors.reduce((sum: number, vendor: Vendor) => sum + vendor.price, 0);
   };
 
   return (

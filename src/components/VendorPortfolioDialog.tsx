@@ -5,11 +5,12 @@ import { Button } from '@/components/ui/button';
 import { ChevronLeft, ChevronRight, Star, Calendar, MessageSquare } from 'lucide-react';
 import { formatCurrency } from '@/lib/utils';
 import { useNavigate } from 'react-router-dom';
+import { MockVendor } from '@/types';
 
 interface VendorPortfolioDialogProps {
   isOpen: boolean;
   onClose: () => void;
-  vendor: any;
+  vendor: MockVendor | null;
 }
 
 const VendorPortfolioDialog: React.FC<VendorPortfolioDialogProps> = ({ isOpen, onClose, vendor }) => {
